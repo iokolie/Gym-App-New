@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '/adminScreens/manageUsers.dart';
 import '/adminScreens/plans-classes.dart';
-import '/adminScreens/updates.dart';
+import '../adminScreens/gym_attendance.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '/auth_page.dart';
 
@@ -79,7 +79,7 @@ class _AdminPageState extends State<AdminPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Updates(),
+                        builder: (context) => Attendance(),
                       ),
                     );
                   },

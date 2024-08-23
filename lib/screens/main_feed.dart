@@ -1,4 +1,4 @@
-import 'package:awesome_notifications/awesome_notifications.dart';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -31,15 +31,7 @@ class _MainFeedState extends State<MainFeed> {
     }
   }
 
-  void triggerNotification() {
-    AwesomeNotifications().createNotification(
-      content: NotificationContent(
-        id: 1,
-        channelKey: '2EAZYKEY',
-        title: 'Do More. You are capable of so much more',
-      ),
-    );
-  }
+  
 
   void signOut() {
     FirebaseAuth.instance.signOut();
